@@ -1,0 +1,14 @@
+{
+	"name": "adrium/gitlab-ci-example"
+	, "autoload": {
+		"psr-4": {
+			"Adrium\\Example\\": "src/"
+		}
+	}
+	, "scripts": {
+		"test": "phpunit"
+		, "test-coverage": "phpunit --coverage-text"
+		, "apigen": "apigen gen -s src -d doc/api"
+		, "coverage": "phpunit --coverage-html doc/coverage"
+	}
+}

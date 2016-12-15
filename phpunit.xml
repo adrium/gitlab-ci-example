@@ -1,0 +1,17 @@
+<phpunit bootstrap="vendor/autoload.php">
+
+	<!-- The following entry defines the path for the tests -->
+	<testsuites>
+		<testsuite name="stdlib">
+			<directory>test</directory>
+		</testsuite>
+	</testsuites>
+
+	<!-- The following entry whitelists the path for coverage measurement -->
+	<filter>
+		<whitelist>
+			<directory>src</directory>
+		</whitelist>
+	</filter>
+
+</phpunit>
