@@ -8,7 +8,7 @@
 	, "scripts": {
 		"test": "phpunit"
 		, "test-coverage": "phpunit --coverage-text"
-		, "apigen": "apigen gen -s src -d doc/api"
-		, "coverage": "phpunit --coverage-html doc/coverage"
+		, "apigen": "apigen gen -q -s src -d ${DOC:-doc}/$(basename $PWD)/api"
+		, "coverage": "phpunit --coverage-html ${DOC:-doc}/$(basename $PWD)/coverage"
 	}
 }

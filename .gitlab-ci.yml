@@ -7,5 +7,5 @@ test:
 
 documentation:
   script:
-    - phpunit --coverage-html $DOC/$(basename $PWD)/coverage
-    - apigen gen -q -s src -d $DOC/$(basename $PWD)/api
+    - composer coverage
+    - composer apigen
